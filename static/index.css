@@ -1,0 +1,54 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #151514; /* Negro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Alinea en la dirección transversal (centro horizontal) */
+  justify-content: center; /* Alinea en la dirección principal (centro vertical) */
+  height: 100vh;
+}
+
+.contenido {
+  text-align: center; /* Ahora el texto y la imagen estarán centrados */
+  padding: 5vw; /* 5% del ancho del viewport como espacio interno */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 80vw; /* 80% del ancho del viewport para el ancho máximo */
+  margin: auto; /* Centrado horizontalmente */
+  display: flex;
+  flex-direction: column; /* Apila los elementos internos verticalmente */
+}
+
+img {
+  width:10vw; /* Establece el ancho en 300 píxeles */
+  height: 10vw; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+
+
+h1 {
+  margin: 0; /* Elimina el margen predeterminado del título */
+  font-size: 3.5vw; /* 3.5% del ancho del viewport como tamaño del texto */
+  line-height: 1.5; /* Altura de línea del título */
+  color: #b03b08; /* Color del texto del título */
+}
+
+ul.lista-precios {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-precios li {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh 0; /* 2% del alto del viewport como margen vertical entre elementos */
+  border-bottom: 1px solid #fff9f9; /* Línea entre elementos de color naranja oscuro */
+  padding-bottom: 1vh; /* 1% del alto del viewport como espacio debajo de la línea */
+}
+
+.producto,
+.precio {
+  font-size: 2vw; /* 2% del ancho del viewport como tamaño del texto para producto y precio */
+  color: #ffffff; /* Color del texto para producto y precio */
+}
